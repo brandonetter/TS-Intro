@@ -1,3 +1,6 @@
+![ec75a1914bcc86a9b508c186e9852bd6](https://github.com/brandonetter/TS-Intro/assets/4108484/a53ed365-5153-49d7-a4d2-235d71fde60a)
+![d2f258f04cd6c49444ccee3e5507c741](https://github.com/brandonetter/TS-Intro/assets/4108484/9e100648-73a9-44b9-a77e-575b62bdb2cf)
+![751330d659ab7aafddf2381f8b6fb3ea](https://github.com/brandonetter/TS-Intro/assets/4108484/60f819dd-36c4-4e33-81eb-16fd7e452050)
 # What is Typescript
 
 Let's first address what Typescript **isn't**. Typescript is **not** an *entirely* different language from Javascript. It doesn't **replace** Javascript. You may often hear it spoken about as if it's a distinct language in conversation with other developers i.e.: "I know Go lang, Javascript, Typescript, etc..." but don't think that means learning Typescript requires learning something entirely new- Typescript is a **superset** of Javascript, which means it's just Javascript with additional features. Everything you've learned about Javascript is still important and valid, adding Typescript to your skillset just means taking that Javascript knowledge to the *next level*, not replacing it with something else. This also means that if you've put off learning Typescript before- then you should stop worrying. You can start using Typescript immediately and slowly implement more of typescript's features as you learn. 
@@ -548,7 +551,13 @@ You'll get used to the event handler names pretty quick- and you'll stop using `
 ## Progress
  
 
-[progress.mp4](/progress.mp4)
+https://github.com/brandonetter/TS-Intro/assets/4108484/9a538b67-ad6e-4200-bcfe-4a3a1c646e61
+
+
+
+https://github.com/brandonetter/TS-Intro/assets/4108484/6c94a89a-d0f4-46c1-9fcb-56794949eed0
+
+
 
 So far we've made a silly little app in typescript and you've learned how to use Typescript with useState, Event handlers, API response data, and Functional Component Props.
 
