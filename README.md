@@ -116,10 +116,10 @@ What you're really doing is *describing* your code and how it behaves to the typ
 The benefits really shine when working in a team. By adding all these types and 'restrictions' to the code you write- you can enforce **how** other people on your team use your code. If you write a function that **explicitly** takes a string as an argument and returns an array- no one on your team will accidentally pass in a number to the function. And they'll know the return type without even looking at your code just by hovering over your function they imported.
 
 You'll get access to powerful autocomplete features not only in your own code, but when using code written by another teammate. You won't need to dig through their code to figure out what's happening- your code editor will just know. For example- after defining this `Post` type, when you create an object with that type then your editor will help you write the rest:
-![406b60295a44dba9e3b79a5cc5e7f0f2.png](../_resources/406b60295a44dba9e3b79a5cc5e7f0f2.png)
+![406b60295a44dba9e3b79a5cc5e7f0f2.png](/406b60295a44dba9e3b79a5cc5e7f0f2.png)
 
 Or after it's already been written or imported- you will get assistance from your editor when keying into the object:
-![2dcd552090b31ba0b9fbda5c63db1496.png](../_resources/2dcd552090b31ba0b9fbda5c63db1496.png)
+![2dcd552090b31ba0b9fbda5c63db1496.png](/2dcd552090b31ba0b9fbda5c63db1496.png)
 
 As you can see it's a powerful tool not just for you, but for collaboration.
 
@@ -130,7 +130,7 @@ Let's jump right in and create a new NextJS project. Don't just read- open up a 
 Run 
 `npx create-next-app@latest`
 In your terminal. Follow the commands.
-![2b84c26d59304a308ee656aeff3d6cac.png](../_resources/2b84c26d59304a308ee656aeff3d6cac.png)
+![2b84c26d59304a308ee656aeff3d6cac.png](/2b84c26d59304a308ee656aeff3d6cac.png)
 
 You should have new project all spun-up and ready to use Typescript in! 
 
@@ -181,14 +181,14 @@ export default async function Home() {
 ```
 
 This runs and works fine- but you'll notice a typescript error:
-![762ab4a94bb6a33e5ba2dcb8944350fa.png](../_resources/762ab4a94bb6a33e5ba2dcb8944350fa.png)
+![762ab4a94bb6a33e5ba2dcb8944350fa.png](/762ab4a94bb6a33e5ba2dcb8944350fa.png)
 
 This is typescript telling you that it has no idea what type of data 'user' is. And because of that, it can't be sure if `user.username` or `user.name` are what you want or if they even exist. We can fix this by creating a 'User' type. This will make Typescript stop yelling at us, AND make it easier for us to key into data with autocomplete.
 
 Let's go to the top of this file and define a 'User' interface (you'll usually use interface for objects). And inside that interface we need to tell Typescript what kind of keys a User will have, and what **types** those keys are. To figure this out we need to go to our API and look at a response. APIs will often include sample responses to help you figure this out, and sometimes it will be in the documentation for each endpoint. Worst case scenario you can just console log the response back and look at the keys/values.
 
 But luckily this API well documented. If we go to https://peoplegeneratorapi.live/ 
-![094c0e93e9ab6f0c1b015d5bbc143f35.png](../_resources/094c0e93e9ab6f0c1b015d5bbc143f35.png)
+![094c0e93e9ab6f0c1b015d5bbc143f35.png](/094c0e93e9ab6f0c1b015d5bbc143f35.png)
 
 So we can just fill this out.
 ```js
@@ -257,7 +257,7 @@ Great. Now we can **explicitly** tell Typescript that the response we get back w
 ```
 
 Now our Typescript error is gone. AND as an added bonus- we have autocomplete!
-![ec75a1914bcc86a9b508c186e9852bd6.png](../_resources/ec75a1914bcc86a9b508c186e9852bd6.png)
+![ec75a1914bcc86a9b508c186e9852bd6.png](/ec75a1914bcc86a9b508c186e9852bd6.png)
 
 Before we build out a user card- let's rework it into a component. Let's map around this component we're about to build instead:
 ```ts
@@ -323,7 +323,7 @@ interface Props {
 ```
 
 But what we really want is to get everything about the User. We could pass in our `user` from the map as a prop- 
-![751330d659ab7aafddf2381f8b6fb3ea.png](../_resources/751330d659ab7aafddf2381f8b6fb3ea.png)
+![751330d659ab7aafddf2381f8b6fb3ea.png](/751330d659ab7aafddf2381f8b6fb3ea.png)
 but then would we have to recreate the type in this file, too?
 
 Not at all. Typescript interfaces and types can be imported and exported just like anything else. We can take our User and Address interfaces from `app/page.tsx` and put them in a different file to import as we need. Let's create a `types` folder in the root and an `index.ts` file inside of it:
@@ -445,7 +445,7 @@ export default async function Home() {
 
 This is what it looks like now:
 
-![d2f258f04cd6c49444ccee3e5507c741.png](../_resources/d2f258f04cd6c49444ccee3e5507c741.png)
+![d2f258f04cd6c49444ccee3e5507c741.png](/d2f258f04cd6c49444ccee3e5507c741.png)
 
 
 ## Hooks and Events
@@ -548,7 +548,7 @@ You'll get used to the event handler names pretty quick- and you'll stop using `
 ## Progress
  
 
-[progress.mp4](../_resources/progress.mp4)
+[progress.mp4](/progress.mp4)
 
 So far we've made a silly little app in typescript and you've learned how to use Typescript with useState, Event handlers, API response data, and Functional Component Props.
 
@@ -612,9 +612,9 @@ export async function getItemById<T extends Item>(
 ```
 This creates a 'Generic' function that we can use for both the `StoreItem` and `VehicleItem` type. 
 This gives us autocomplete for the endpoint:
-![224d24d6c8b71e88a8dc057e1a99ab64.png](../_resources/224d24d6c8b71e88a8dc057e1a99ab64.png)
+![224d24d6c8b71e88a8dc057e1a99ab64.png](/224d24d6c8b71e88a8dc057e1a99ab64.png)
 And if we properly type the Generic, typescript can give us autocomplete for the return value, too:
-![7b10e19ada6db31d3282e53c562b8866.png](../_resources/7b10e19ada6db31d3282e53c562b8866.png)
+![7b10e19ada6db31d3282e53c562b8866.png](/7b10e19ada6db31d3282e53c562b8866.png)
 
 
 That's an interesting feature- but we could also do it a better way with overloads instead of 'tags':
@@ -639,7 +639,7 @@ Then we write the actual function. Now whenever that function is used, Typescrip
 Overloading functions is a feature of vanilla Javascript- but becomes even more powerful with typescript.
 
 Now we don't even need to be explicit with the Generic type when we call the function- but we still get all the benefits:
-![9f58f8f0c91b73e9e2a6954f88bcc749.png](../_resources/9f58f8f0c91b73e9e2a6954f88bcc749.png)
+![9f58f8f0c91b73e9e2a6954f88bcc749.png](/9f58f8f0c91b73e9e2a6954f88bcc749.png)
 
 
 ## In progress:
