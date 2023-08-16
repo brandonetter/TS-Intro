@@ -400,7 +400,7 @@ export default function UserCard({ user }: { user: User }) {
 
 ```
 
-Let's create another component and call it `CardPage.tsx`. Inside of it we'll do our mapping over the user cards and add some basic pagination.
+Let's create another component and call it `CardDisplay.tsx`. Inside of it we'll do our mapping over the user cards and add some basic pagination.
 
 ```ts
 "use client"
