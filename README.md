@@ -561,7 +561,10 @@ https://github.com/brandonetter/TS-Intro/assets/4108484/6c94a89a-d0f4-46c1-9fcb-
 
 So far we've made a silly little app in typescript and you've learned how to use Typescript with useState, Event handlers, API response data, and Functional Component Props.
 
-## Creating functions with Typescript and Generics
+# Part 2 / more advanced / WIP / Creating functions with Typescript and Generics
+TODO: Setup second small project?
+Note: want to dive into more fun concepts, but didn't feel natural to mix them into an introduction.
+
 
 Let's get a little more advanced. I've created a mock API here
 
